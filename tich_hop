@@ -1,0 +1,46 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "TÍCH HỢP", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "CHÍNH",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Section"
+})
+
+OrionLib:MakeNotification({
+	Name = "Title!",
+	Content = "Notification content... what will it say??",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+Tab:AddButton({
+	Name = "RAITO HUB",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/refs/heads/main/Script"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "KHOA DEV HUB",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/khoadevtt/Script-fish-khoadev/refs/heads/main/Khoadevhub.lua"))()
+
+  	end    
+})
+Tab:AddButton({
+	Name = "ADMIN NAME LESS",
+	Callback = function()
+        loadstring(game:HttpGet("https://github.com/FilteringEnabled/NamelessAdmin/blob/main/Source?raw=true"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "ADMIN 2",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
